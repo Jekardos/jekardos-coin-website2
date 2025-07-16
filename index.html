@@ -8,12 +8,20 @@
     <meta name="keywords" content="Jekardos Coin, JK, web3 путешественник, Евгений Юрьев путешественник, Странник Jekardos, путешествие, 1000 километров пешком до Москвы, Из Самары до Москвы пешком, Зимовка в палатке, Зимовка в палатке с печкой Самара 2024, блокчейн TON, криптовалюта, сообщество, NFT, приключения, поход, выживание, блогер">
     <meta name="author" content="Евгений Юрьев (Странник Jekardos)">
 
+    <!-- Open Graph Meta Tags for social media -->
     <meta property="og:title" content="Jekardos Coin Community - Приключения Странника Jekardos">
     <meta property="og:description" content="Jekardos Coin (JK) — это сообщество блогера-путешественника Евгения Юрьева (Странник Jekardos), который прошел 1000 км пешком, зимовал в палатке с печкой в лесу. Откройте мир web3 путешествий и уникальных приключений.">
-    <meta property="og:image" content="https://jekardos.github.io/jekardos-coin-website2/jk_logo.png"> <meta property="og:url" content="https://jekardos.github.io/jekardos-coin-website2/"> <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourwebsite.com/jk_logo.png"> <!-- Замените на полный URL вашего логотипа -->
+    <meta property="og:url" content="https://yourwebsite.com/"> <!-- Замените на полный URL вашей страницы -->
+    <meta property="og:type" content="website">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;0,700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!--
+        Концептуальное разделение CSS:
+        В реальном приложении эти стили могли бы быть в отдельном файле, например, style.css,
+        и подключались бы так: <link rel="stylesheet" href="/path/to/style.css">
+    -->
     <style>
         /* Tailwind CSS custom colors */
         :root {
@@ -245,12 +253,78 @@
         <main class="flex-1 p-6 md:p-8 overflow-y-auto">
             <div id="content-container" class="max-w-3xl mx-auto">
                 </div>
+            <section id="additional-info" class="bg-gray-800 p-6 md:p-8 rounded-lg shadow-lg my-8 max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--color-heading-yellow);">Дополнительная информация и поддержка</h2>
+
+                <!-- NFT Minting Address -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-2" style="color: var(--color-light-text);">Оригинальные NFT минтит этот адрес:</h3>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center bg-gray-700 p-3 rounded-md">
+                        <code id="nft-mint-address" class="flex-grow text-yellow-300 break-all mb-2 sm:mb-0 sm:mr-2">UQBuOVsMGzrwfWh8QH9tCu_VlJ_J-nSYtQXPIuMkb7bStG3A</code>
+                        <button onclick="copyToClipboard('nft-mint-address', this)" class="px-3 py-1 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition duration-300 w-full sm:w-auto">Копировать</button>
+                    </div>
+                </div>
+
+                <!-- NFT Collection Addresses -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--color-light-text);">Адреса NFT коллекций:</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <span class="font-semibold" style="color: var(--color-heading-yellow);">1000 километров из Самары до Москвы пешком:</span><br>
+                            <a href="https://getgems.io/collection/EQBAHcbCJWuZvluNFVWA3estS_O_53Viic_y4BukGHQe1-27" target="_blank" class="text-orange-400 hover:underline break-all">https://getgems.io/collection/EQBAHcbCJWuZvluNFVWA3estS_O_53Viic_y4BukGHQe1-27</a>
+                        </li>
+                        <li>
+                            <span class="font-semibold" style="color: var(--color-heading-yellow);">Зимовка в палатке 2024:</span><br>
+                            <a href="https://getgems.io/collection/EQBASsGE15DFJT3uKbJm9FQ54x7rMn0vzvyddINnIWqhaER2" target="_blank" class="text-orange-400 hover:underline break-all">https://getgems.io/collection/EQBASsGE15DFJT3uKbJm9FQ54x7rMn0vzvyddINnIWqhaER2</a>
+                        </li>
+                        <li>
+                            <span class="font-semibold" style="color: var(--color-heading-yellow);">Кризис 2025 | Болезнь матери:</span><br>
+                            <a href="https://getgems.io/collection/EQCSuo52ZNRstHgk-zPsAYqgJWV3FXvdAX6qYM3_6Bi2PtIh" target="_blank" class="text-orange-400 hover:underline break-all">https://getgems.io/collection/EQCSuo52ZNRstHgk-zPsAYqgJWV3FXvdAX6qYM3_6Bi2PtIh</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Website and YouTube -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--color-light-text);">Другие ресурсы:</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <span class="font-semibold" style="color: var(--color-heading-yellow);">Сайт:</span>
+                            <a href="https://jekardos.ru" target="_blank" class="text-orange-400 hover:underline">jekardos.ru</a>
+                        </li>
+                        <li>
+                            <span class="font-semibold" style="color: var(--color-heading-yellow);">YouTube канал:</span>
+                            <a href="https://www.youtube.com/channel/UCoi2YbIMFbypofD0jVIC9vA" target="_blank" class="text-orange-400 hover:underline">YouTube-канал Евгения Юрьева</a>
+                            <p class="text-sm text-gray-400 mt-1">
+                                <i class="fas fa-info-circle"></i> Пожалуйста, проверьте правильность ссылки на YouTube-канал, так как предоставленный URL "https://www.youtube.com/channel/UCoi2YbIMFbypofD0jVIC9vA" может быть неполным или нерабочим.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support Author Block -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--color-light-text);">Поддержать автора не участвуя в JK community:</h3>
+                    <div class="space-y-4">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center bg-gray-700 p-3 rounded-md">
+                            <span class="font-semibold mr-2 mb-1 sm:mb-0" style="color: var(--color-heading-yellow);">Тбанк (МИР):</span>
+                            <code id="card-tbank" class="flex-grow text-yellow-300 break-all mb-2 sm:mb-0 sm:mr-2">2200 7009 9282 5871</code>
+                            <button onclick="copyToClipboard('card-tbank', this)" class="px-3 py-1 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition duration-300 w-full sm:w-auto">Копировать</button>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center bg-gray-700 p-3 rounded-md">
+                            <span class="font-semibold mr-2 mb-1 sm:mb-0" style="color: var(--color-heading-yellow);">Альфа-Банк (МИР):</span>
+                            <code id="card-alfabank" class="flex-grow text-yellow-300 break-all mb-2 sm:mb-0 sm:mr-2">2200 1545 0233 4591</code>
+                            <button onclick="copyToClipboard('card-alfabank', this)" class="px-3 py-1 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition duration-300 w-full sm:w-auto">Копировать</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Меню-оверлей -->
         <div id="overlay-menu" class="overlay">
             <div class="overlay-content">
-                <button id="overlay-close-btn" class="overlay-close">&times;</button>
+                <button id="overlay-close-btn" class="overlay-close">×</button>
                 <ul id="overlay-nav-links" class="flex flex-col space-y-3">
                     <!-- Ссылки навигации будут заполнены JavaScript -->
                 </ul>
@@ -259,6 +333,31 @@
     </div>
 
     <script>
+        // Функция для копирования текста в буфер обмена
+        function copyToClipboard(elementId, button) {
+            const textToCopy = document.getElementById(elementId).innerText;
+            // Удаляем пробелы из номера карты перед копированием
+            // Используем document.execCommand('copy') для лучшей совместимости в iframe
+            const tempInput = document.createElement('textarea');
+            tempInput.value = textToCopy.replace(/\s/g, '');
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                const originalText = button.innerText;
+                button.innerText = 'Скопировано!';
+                setTimeout(() => {
+                    button.innerText = originalText;
+                }, 2000);
+            } catch (err) {
+                console.error('Ошибка при копировании: ', err);
+                // Fallback for older browsers or if execCommand fails
+                // You might want to display a message to the user that copying failed
+            } finally {
+                document.body.removeChild(tempInput);
+            }
+        }
+
         //
         // Концептуальное разделение контента по языкам:
         // В реальном приложении эти объекты могли бы быть загружены из отдельных JSON/JS файлов
@@ -515,104 +614,87 @@
                 <ul class="ml-4 space-y-2">
                     <li>🔒 <em>Author's Share Limitation:</em> The author pledges never to own more than 20% of the total JK emission. This ensures that the vast majority of tokens are in the hands of the community, promoting decentralization.</li>
                     <li>📈 <em>Monetization Contribution:</em> A portion of Traveler Jekardos's channel monetization is directed into JK, creating support and contributing to the token's development.</li>
-                    <li>✅ <em>Transparency:</em> All JK token operations, including distributions and movements, will be transparent and readable on the TON blockchain.</li>
-                    <li>👨‍👩‍👧‍👦 <em>Family Support:</em> The author's open statement about the possibility of using his share to support his family strengthens trust and demonstrates the project's humanity.</li>
-                </ul>
-                <div class="flex flex-col items-center my-8 p-4 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-orange-400 mb-4">JK DISTRIBUTION</h3>
-                    <div class="w-full h-8 bg-gray-600 rounded-full flex overflow-hidden">
-                        <div class="bg-yellow-500 h-full flex items-center justify-center text-[0.5rem] font-bold text-gray-900 text-center rounded-l-full" style="width: 20%;">
-                            20% AUTHOR
-                        </div>
-                        <div class="bg-orange-500 h-full flex items-center justify-center text-[0.5rem] font-bold text-gray-900 text-center rounded-r-full" style="width: 80%;">
-                            80% COMMUNITY
-                        </div>
-                    </div>
-                    <div class="flex justify-between w-full text-sm mt-2 text-gray-400">
-                        <span>Maximum Author's Share</span>
-                        <span>Community Share</span>
-                    </div>
-                </div>`,
-                "VISION AND FUTURE": `Jekardos Coin aims to create a <em>sustainable, decentralized, and self-sufficient community</em>. Key development directions include:
+                    <li>✅ <em>Transparency:</em> All JK token operations...`,
+                "ВИДЕНИЕ И БУДУЩЕЕ": `Jekardos Coin aims to create a <em>sustainable, decentralized, and self-sufficient community</em>. Key development areas include:
                 <br><br>
                 <ul class="ml-4 space-y-2">
                     <li>🌐 <em>Gradual Decentralization:</em> Transition from the Whale Council to a full-fledged Decentralized Autonomous Organization (DAO), where decisions will be made by voting of all JK holders.</li>
                     <li>🚀 <em>Ecosystem Expansion:</em> Attracting new partners and developers to create additional services and products using JK.</li>
                     <li>✨ <em>Strengthening Community Brand:</em> Developing a unique JK identity that will exist independently of the author's personal brand but will complement it.</li>
-                    <li>🤖 <em>Process Automation:</em> Maximum automation of distributions and other operations through smart contracts to increase efficiency and transparency.</li>
+                    <li>🤖 <em>Process Automation:</em> Maximizing automation of distributions and other operations through smart contracts to increase efficiency and transparency.</li>
                 </ul>
                 <br><br>`,
-                "IMPORTANT LEGAL DISCLAIMER": `Jekardos Coin (JK) IS NOT AN INVESTMENT INSTRUMENT, SECURITY, DIGITAL FINANCIAL ASSET (DFA), or means of payment in accordance with the legislation of the Russian Federation.
+                "ВАЖНОЕ ЮРИДИЧЕСКОЕ ПРЕДУПРЕЖДЕНИЕ": `Jekardos Coin (JK) <em>IS NOT AN INVESTMENT INSTRUMENT, SECURITY, DIGITAL FINANCIAL ASSET (DFA) or means of payment</em> in accordance with the legislation of the Russian Federation.
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>⚠️ <em>Risks:</em> The value of JK for the community can both increase and decrease, and can fall to zero. There are no guarantees of profit or preservation of invested funds.</li>
-                    <li>⚖️ <em>Responsibility:</em> You bear full responsibility for any operations with JK, including compliance with the tax legislation of your jurisdiction.</li>
-                    <li>👨‍⚖️ <em>Not Legal Advice:</em> The information in this document is not legal or financial advice. WE STRONGLY RECOMMEND <em>CONSULTING A QUALIFIED LAWYER</em> specializing in digital assets and the laws of your country for all matters related to JK.</li>
+                    <li>⚠️ <em>Risks:</em> The value of JK for the community can both rise and fall, and can drop to zero. There are no guarantees of profit or preservation of invested funds.</li>
+                    <li>⚖️ <em>Responsibility:</em> You are solely responsible for any operations with JK, including compliance with the tax legislation of your jurisdiction.</li>
+                    <li>👨‍⚖️ <em>Not Legal Advice:</em> The information in this document is not legal or financial advice. We STRONGLY RECOMMEND <em>CONSULTING A QUALIFIED LAWYER</em> specializing in digital assets and the laws of your country for all matters related to JK.</li>
                 </ul>
                 <br><br>`,
-                "CONCLUSION": `Jekardos Coin is an <em>ambitious project</em> that combines the power of a personal brand, an active community, and innovative blockchain technologies. Its success will depend on continuous community engagement, expansion of token utility, and a responsible approach to development, taking into account all legal aspects. <em>Join the JK community and become part of this unique story!</em>`,
-                "WHAT IS TON BLOCKCHAIN?": `TON (The Open Network) is a <em>decentralized blockchain platform</em>, developed by the Telegram team. It is designed to process millions of transactions per second, offering fast, secure, and scalable solutions.
+                "ЗАКЛЮЧЕНИЕ": `Jekardos Coin is an <em>ambitious project</em> that combines the power of a personal brand, an active community, and innovative blockchain technologies. Its success will depend on continuous community engagement, token utility expansion, and a responsible approach to development, considering all legal aspects. <em>Join the JK community and become part of this unique story!</em>`,
+                "ЧТО ТАКОЕ TON BLOCKCHAIN?": `TON (The Open Network) is a <em>decentralized blockchain platform</em> developed by the Telegram team. It is designed to process millions of transactions per second, offering fast, secure, and scalable solutions.
                 <br><br>
                 <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">ADVANTAGES OF TON:</h3>
                 <br><br>
                 <ul class="ml-4 space-y-2">
                     <li>⚡️ <em>Scalability:</em> TON can handle a huge number of transactions thanks to its unique "infinite sharding" architecture.</li>
                     <li>🚀 <em>Speed:</em> Transactions on the TON network are confirmed almost instantly.</li>
-                    <li>🔒 <em>Security:</em> A high level of cryptographic protection ensures the security of user assets and data.</li>
-                    <li>🌐 <em>Decentralization:</em> The network is community-governed, reducing the risks of centralized control.</li>
-                    <li>📱 <em>User-Frendliness:</em> Integration with Telegram makes TON accessible to millions of users.</li>
-                    <li>💰 <em>Low Fees:</em> Transaction costs on the TON network are significantly lower than on many other blockchains.</li>
+                    <li>🔒 <em>Security:</em> High level of cryptographic protection ensures the security of user assets and data.</li>
+                    <li>🌐 <em>Decentralization:</em> The network is governed by the community, which reduces the risks of centralized control.</li>
+                    <li>📱 <em>User-friendly:</em> Integration with Telegram makes TON accessible to millions of users.</li>
+                    <li>💰 <em>Low Fees:</em> Transaction costs on the TON network are significantly lower than in many other blockchains.</li>
                 </ul>
                 <br><br>`,
-                "HOW TO CREATE A TON SPACE WALLET (VIA TELEGRAM)": `TON Space is a <em>non-custodial wallet</em> built directly into Telegram. It allows you to easily manage your TON and other tokens.
+                "КАК ЗАВЕСТИ TON SPACE КОШЕЛЁК (ЧЕРЕЗ TELEGRAM)": `TON Space is a <em>non-custodial wallet</em> built right into Telegram. It allows you to easily manage your TON and other tokens.
                 <br><br>
                 <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">INSTRUCTIONS:</h3>
                 <br><br>
                 <ol class="list-decimal list-inside ml-4 space-y-2">
-                    <li>1️⃣ Open Telegram and find the <a href="https://t.me/wallet" target="_blank" class="text-orange-400 hover:underline">@wallet</a> bot.</li>
+                    <li>1️⃣ Open Telegram and find the bot <a href="https://t.me/wallet" target="_blank" class="text-orange-400 hover:underline">@wallet</a>.</li>
                     <li>2️⃣ Click "Start".</li>
-                    <li>3️⃣ Follow the bot's instructions to activate your wallet. You will be prompted to create a new wallet or import an existing one.</li>
+                    <li>3️⃣ Follow the bot's instructions to activate the wallet. You will be prompted to create a new wallet or import an existing one.</li>
                     <li>4️⃣ When creating a new wallet, be sure to save your <em>seed phrase</em> in a safe place. This is your <strong>key to your assets</strong>!</li>
                     <li>5️⃣ After activation, you will see your balance and can send/receive TON and other tokens.</li>
                 </ol>
                 <br><br>`,
-                "HOW TO CREATE A TONKEEPER WALLET": `Tonkeeper is a popular third-party TON wallet, available as a mobile app and browser extension. It offers <em>advanced features and a user-friendly interface</em>.
+                "КАК ЗАВЕСТИ TONKEEPER КОШЕЛЁК": `Tonkeeper is a popular third-party wallet for TON, available as a mobile app and browser extension. It offers <em>extended features and a user-friendly interface</em>.
                 <br><br>
                 <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">INSTRUCTIONS:</h3>
                 <br><br>
                 <ol class="list-decimal list-inside ml-4 space-y-2">
-                    <li>1️⃣ <strong>For mobile:</strong> Download the Tonkeeper app from the App Store (iOS) or Google Play (Android).</li>
-                    <li>2️⃣ <strong>For browser:</strong> Install the Tonkeeper extension for your browser (Chrome, Firefox, etc.).</li>
+                    <li>1️⃣ <strong>For mobile devices:</strong> Download the Tonkeeper app from the App Store (iOS) or Google Play (Android).</li>
+                    <li>2️⃣ <strong>For browsers:</strong> Install the Tonkeeper extension for your browser (Chrome, Firefox, etc.).</li>
                     <li>3️⃣ Open the app/extension and select "Create new wallet".</li>
-                    <li>4️⃣ Read and accept the terms carefully.</li>
+                    <li>4️⃣ Carefully read and agree to the terms.</li>
                     <li>5️⃣ Write down your <em>seed phrase</em> in a safe place. <strong>Never share it with anyone!</strong></li>
                     <li>6️⃣ Confirm the seed phrase by entering the requested words.</li>
-                    <li>7️⃣ Come up with and confirm a password to access your wallet.</li>
+                    <li>7️⃣ Create and confirm a password for wallet access.</li>
                     <li>8️⃣ Your Tonkeeper wallet is now ready to use!</li>
                 </ol>
                 <br>
                 <p class="mt-4 text-lg leading-relaxed text-gray-300">Official Tonkeeper website: <a href="https://www.tonkeeper.com/" target="_blank" class="text-orange-400 hover:underline">tonkeeper.com</a></p>
                 <br><br>`,
-                "USEFUL LINKS": `
+                "ПОЛЕЗНЫЕ ССЫЛКИ": `
                 <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">OUR RESOURCES:</h3>
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Jekardos coin Community Chat: <a href="https://t.me/JekardosCoinForever" target="_blank" class="text-orange-400 hover:underline">JekardosCoinForever</a></li>
-                    <li><i class="fab fa-youtube text-red-600 mr-2"></i>YouTube Channel: <a href="https://www.youtube.com/channel/UCoi2YbIMFbypofD0jVIC9vA" target="_blank" class="text-orange-400 hover:underline">YouTube-канал</a></li>
-                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>JK community Author's Personal Telegram Channel: <a href="https://t.me/ya_jekardos" target="_blank" class="text-orange-400 hover:underline">@ya_jekardos</a></li>
-                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Telegram bot for counting activity in JK community: <a href="https://t.me/Strannik_jekardos_bot" target="_blank" class="text-orange-400 hover:underline">@Strannik_jekardos_bot</a></li>
-                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Telegram bot for accessing content archive and seasonal chats of Jekardos coin Community, JK exchange rate calculator: <a href="https://t.me/DikoNFTcheck_bot" target="_blank" class="text-orange-400 hover:underline">@DikoNFTcheck_bot</a></li>
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Jekardos Coin Community Chat: <a href="https://t.me/JekardosCoinForever" target="_blank" class="text-orange-400 hover:underline">JekardosCoinForever</a></li>
+                    <li><i class="fab fa-youtube text-red-600 mr-2"></i>YouTube Channel: <a href="https://www.youtube.com/channel/UCoi2YbIMFbypofD0jVIC9vA" target="_blank" class="text-orange-400 hover:underline">YouTube Channel</a></li>
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Author's personal Telegram channel of JK community: <a href="https://t.me/ya_jekardos" target="_blank" class="text-orange-400 hover:underline">@ya_jekardos</a></li>
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Telegram bot for counting activity in the JK community: <a href="https://t.me/Strannik_jekardos_bot" target="_blank" class="text-orange-400 hover:underline">@Strannik_jekardos_bot</a></li>
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Telegram bot for accessing content archive and seasonal chats of Jekardos Coin Community, JK rate calculator: <a href="https://t.me/DikoNFTcheck_bot" target="_blank" class="text-orange-400 hover:underline">@DikoNFTcheck_bot</a></li>
                 </ul>
                 <br><br>
-                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">ADDITIONAL TON RESOURCES:</h3>
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">ADDITIONAL RESOURCES ON TON:</h3>
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>🌐 Official website of The Open Network: <a href="https://ton.org/" target="_blank" class="text-orange-400 hover:underline">ton.org</a></li>
-                    <li>🔍 TON blockchain explorer: <a href="https://tonviewer.com/" target="_blank" class="text-orange-400 hover:underline">tonviewer.com</a></li>
+                    <li>🌐 Official The Open Network website: <a href="https://ton.org/" target="_blank" class="text-orange-400 hover:underline">ton.org</a></li>
+                    <li>🔍 TON Blockchain Explorer: <a href="https://tonviewer.com/" target="_blank" class="text-orange-400 hover:underline">tonviewer.com</a></li>
                     <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Gas Pump Exchange: <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NjQ4ODA0NTUxLCJ0b2tlbl9hZGRyZXNzIjoiRVFDa3RheERfcmFNUDZJQVJ6TVVMMlhZLTJob2U5TjU5eGwxMUw2RDhVT2txQkk3In0" target="_blank" class="text-orange-400 hover:underline">GasPump bot</a></li>
                 </ul>
                 <br><br>`,
-                "HOW JEKARDOS COIN BOT WORKS": `The Jekardos Coin Community bot is designed to make our community <em>more interactive</em> and reward active participants!
+                "КАК РАБОТАЕТ БОТ JEKARDOS COIN": `The Jekardos Coin Community bot is designed to make our community <em>more interactive</em> and reward active participants!
                 <br><br>
                 <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">HOW IT WORKS:</h3>
                 <br><br>
@@ -626,88 +708,88 @@
                     <li>🔄 <em>Automatic point transfer:</em> Your daily points are automatically transferred to the weekly tally, then to the monthly, annual, and finally to the "lifetime" tally.</li>
                 </ul>
                 <br><br>`,
-                "CHAT RULES": `
+                "ПРАВИЛА ЧАТА": `
                 <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">CHAT RULES:</h3>
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>✅ <em>Hating the author</em> will very likely lead to a ban;</li>
-                    <li>✅ <em>Inappropriate behavior</em> will lead to a ban;</li>
+                    <li>✅ <em>Hate towards the author</em> will most likely lead to a ban;</li>
+                    <li>✅ <em>Inadequate behavior</em> will lead to a ban;</li>
                     <li>✅ <em>Rude behavior</em> towards other chat participants will lead to a ban;</li>
-                    <li>✅ <em>Hatred and enmity</em> will lead to a ban;</li>
-                    <li>✅ Activity in the chat is rewarded with $JK.</li>
+                    <li>✅ <em>Hate and enmity</em> will lead to a ban;</li>
+                    <li>✅ Activity in the chat can be rewarded with $JK.</li>
                 </ul>
                 <br><br>
-                <p class="mt-4 text-red-400 font-bold">Bans are not lifted under any circumstances.</p>`,
-                "SUPPORT": `
+                <p class="mt-4 text-red-400 font-bold">Ban is not lifted under any circumstances.</p>`,
+                "ПОДДЕРЖКА": `
                 <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">TECHNICAL SUPPORT:</h3>
-                <p class="text-lg leading-relaxed text-gray-300">If you have any questions or problems, you can contact the administrator: <a href="https://t.me/Jekardos_bot" target="_blank" class="text-orange-400 hover:underline">@Jekardos_bot</a></p>`
+                <p class="text-lg leading-relaxed text-gray-300">If you have questions or problems, you can contact the administrator: <a href="https://t.me/Jekardos_bot" target="_blank" class="text-orange-400 hover:underline">@Jekardos_bot</a></p>`
             },
             zh: {
-                "简介": `Jekardos Coin (JK) 不仅仅是一个迷因币，它还是 Jekardos Coin 社区的<em>核心</em>，围绕旅行博主 Jekardos 的媒体活动而建立。JK 于 2024 年 12 月 14 日在 TON 区块链上创建，定位为社区代币，而非投资资产。其主要目标是<em>深化作者与受众之间的互动</em>，鼓励忠诚度，<em>支持社区成员的创造力和旅行</em>，并创建一个去中心化的生态系统，让每个参与者都能贡献并获得特权。`,
-                "作者角色": `项目作者，旅行者 Jekardos，是社区发展的<em>核心人物</em>和主要推动者。他基于独特经验和冒险的个人品牌，与受众建立了强烈的情感联系：
+                "ВВЕДЕНИЕ": `Jekardos Coin (JK) 不仅仅是一个模因币，它是Jekardos Coin 社区的<em>核心</em>，该社区围绕着旅行博主Jekardos的媒体活动而建立。JK于2024年12月14日在TON区块链上创建，定位为一个社区代币，而非投资资产。其主要目标是<em>深化</em>作者与受众之间的<em>互动</em>，鼓励忠诚度，<em>支持社区成员的创造力和旅行</em>，并创建一个去中心化的生态系统，让每个参与者都能贡献并获得特权。`,
+                "РОЛЬ АВТОРА": `项目作者Jekardos是<em>核心人物</em>和社区发展的主要推动者。他基于独特经验和冒险的个人品牌，与受众建立了牢固的情感联系：
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>✨ <em>旅行家和博主：</em> 旅行者 Jekardos 步行 1000 公里，在森林里用带炉子的帐篷过冬，并访问了俄罗斯 45 多个城市。</li>
-                    <li>🐾 <em>阿雅的救星：</em> 营救和抚养一只名叫阿雅的混血小狗的故事，为项目增添了人情味，并引起了受众的共鸣。 <a href="https://t.me/AyaTraveler" target="_blank" class="text-orange-400 hover:underline">阿雅的 Telegram 频道</a>。</li>
-                    <li>💰 <em>收益贡献：</em> Jekardos 旅行者将其频道的部分收益以 TON 的形式直接用于支持 JK，表明了对项目的承诺并促进其发展。</li>
-                    <li>🔒 <em>份额限制：</em> 作者承诺永远不会拥有超过代币总发行量 20% 的份额，这是<em>信任的关键因素</em>，也是迈向去中心化的一步。</li>
-                    <li>🤝 <em>开放性：</em> 作者可以将其代币份额的一部分（最高 20%）用于支持其家人，他公开向社区传达这一点，增强了透明度和信任。</li>
+                    <li>✨ <em>旅行家和博主：</em>Jekardos徒步旅行1000公里，在森林里带着炉子在帐篷里过冬，并游览了俄罗斯45个城市。</li>
+                    <li>🐾 <em>Aya的救星：</em>拯救和抚养混血流浪狗Aya的故事为项目增添了人情味，并引起了受众的共鸣。<a href="https://t.me/AyaTraveler" target="_blank" class="text-orange-400 hover:underline">Aya的Telegram频道</a>。</li>
+                    <li>💰 <em>货币化贡献：</em>他的频道部分货币化所得（以TON形式）Jekardos会用于支持JK，这表明他对项目的承诺并促进其发展。</li>
+                    <li>🔒 <em>份额限制：</em>作者承诺永远不会拥有超过代币总发行量20%的份额，这是<em>信任的关键因素</em>，也是实现去中心化的一步。</li>
+                    <li>🤝 <em>公开性：</em>作者可以将其部分代币份额（最高20%）用于支持家人，他公开向社区宣布这一点，从而增强了透明度和信任。</li>
                 </ul>
                 <br><br>`,
-                "社区如何运作": `JK 社区以<em>积极参与、鼓励和集体决策</em>为原则运作。`,
-                "通过购买 JK 获得支持": `
+                "КАК РАБОТАЕТ СООБЩЕСТВО": `JK社区以<em>积极参与、鼓励和集体决策</em>为原则运作。`,
+                "ПОДДЕРЖКА ЧЕРЕЗ ПОКУПКУ": `
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>🎁 <em>捐赠替代方案：</em> Jekardos 旅行者频道的订阅者，不再是传统的捐赠，而是购买 Jekardos Coin (JK)。这使得被动支持转化为<em>积极参与</em>，并为社区和内容开发做出贡献。</li>
-                    <li>📈 <em>价值动态：</em> JK 对社区的价值可能会随着 TON 的变化而变化，这得益于作者的媒体活动，以及将频道部分收益重新投入 JK。</li>
+                    <li>🎁 <em>捐赠替代方案：</em>Jekardos频道订阅者可以通过购买Jekardos Coin（JK）来替代传统捐赠。这使被动支持转化为<em>积极参与</em>，并为社区和内容开发做出贡献。</li>
+                    <li>📈 <em>价值动态：</em>JK对社区的价值可能随TON的变化而变化，并受益于作者的媒体活动，以及将频道部分货币化所得用于回购JK。</li>
                 </ul>
                 <br><br>`,
-                "鲸鱼理事会": `
+                "КИТОВЫЙ СОВЕТ": `
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>🐳 <em>参与者：</em> 持有 JK 超过总代币量 5% 的持有者可以成为鲸鱼理事会成员。</li>
-                    <li>🗳️ <em>决策制定：</em> 鲸鱼理事会参与 Jekardos Coin 社区的<em>重要决策</em>，赋予大持有者对项目发展的影响力。</li>
-                    <li>💖 <em>额外贡献：</em> 鲸鱼理事会成员可以自愿向社区分发预算中添加代币，以加强其支持。</li>
-                    <li>🎨 <em>支持创造力和旅行：</em> 鲸鱼理事会成员可以投票决定将 JK 代币转让给其他订阅者，以鼓励他们的创造力和旅行，从而直接支持积极和有才华的社区成员。</li>
+                    <li>🐳 <em>参与者：</em>持有超过总币量5%的JK持有者可以成为巨鲸委员会的成员。</li>
+                    <li>🗳️ <em>决策制定：</em>巨鲸委员会参与Jekardos Coin社区的<em>重要决策</em>，这使得大额持有者对项目发展具有影响力。</li>
+                    <li>💖 <em>额外贡献：</em>巨鲸委员会成员可以自愿向社区的分配预算中添加代币，从而加强其支持。</li>
+                    <li>🎨 <em>支持创意和旅行：</em>巨鲸委员会成员可以投票决定将JK代币用于鼓励其他订阅者的创意和旅行，从而直接支持积极和有才华的社区成员。</li>
                 </ul>
                 <br><br>`,
-                "聊天活动系统": `
+                "СИСТЕМА АКТИВНОСТИ В ЧАТЕ": `
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>💬 <em>活动积分：</em> 在聊天中每条<em>有意义的</em>消息（超过 3 个字）都会获得积分，之后您可以获得 $JK (Jekardos Coin)。您越<em>活跃</em>，赚取的积分就越多！</li>
-                    <li>📊 <em>/stats 命令：</em> 使用此命令查看您的<em>个人统计数据</em>：您在一天、一周、一个月、一年和所有时间赚取了多少 $JK。</li>
-                    <li>🏆 <em>/rating 命令：</em> 显示不同时期（一天、一周、一个月、一年）聊天中最活跃的<em>前 10 名</em>参与者。与朋友竞争！</li>
-                    <li>❓ <em>/help 命令：</em> 机器人功能的详细指南以及有关项目和技术的<em>重要信息</em>。</li>
-                    <li>🔗 <em>/JKcommunity 命令：</em> 包含我们<em>所有资源</em>和社交网络的链接。</li>
-                    <li>⏰ <em>欢乐时光：</em> 在一天中的特定时间，获得 $JK 的机会会<em>增加</em>！请留意通知。</li>
-                    <li>🔄 <em>自动积分转移：</em> 您的每日积分会自动转移到每周统计，然后是每月、每年，最后是“终身”统计。</li>
+                    <li>💬 <em>活跃度积分：</em>在聊天中每条<em>有意义的</em>消息（超过3个字的消息）都会获得积分，之后您可以凭此获得$JK（Jekardos Coin）。您<em>越活跃</em>，获得的积分就越多！</li>
+                    <li>📊 <em>/stats 命令：</em>使用此命令可以查看您的<em>个人统计数据</em>：您每天、每周、每月、每年以及总共获得了多少$JK。</li>
+                    <li>🏆 <em>/rating 命令：</em>显示不同时期（日、周、月、年）最活跃的聊天参与者的<em>前10名</em>。与朋友竞争！</li>
+                    <li>❓ <em>/help 命令：</em>关于机器人功能和项目及技术<em>重要信息</em>的详细指南。</li>
+                    <li>🔗 <em>/JKcommunity 命令：</em>包含<em>我们所有资源</em>和社交网络的链接。</li>
+                    <li>⏰ <em>欢乐时光：</em>在一天中的特定时间，获得$JK的活跃度机会<em>增加</em>！请留意通知。</li>
+                    <li>🔄 <em>积分自动转移：</em>您的每日积分会自动转移到每周统计，然后是每月、每年，最后是“终身”统计。</li>
                 </ul>
                 <br><br>`,
-                "NFT 系列": `
+                "NFT-КОЛЛЕКЦИИ": `
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>🖼️ <em>NFT 的本质：</em> Jekardos NFT 系列不仅仅是数字图像，更是作者生命历程的<em>编年史</em>，记录在区块链上。它们代表了他旅程中独特的时刻和阶段。</li>
-                    <li>💎 <em>NFT 类别：</em> NFT 分为普通、稀有和传奇，增加了收藏和独特性。</li>
-                    <li>🎁 <em>所有权奖励：</em> 过去 NFT 系列的所有者会定期获得额外的 JK 代币分发，无论他们当前是否参与 JK 社区。这是对他们过去支持的一种鼓励和感谢，其中 NFT 作为这种参与的证明。</li>
+                    <li>🖼️ <em>NFT的本质：</em>Jekardos NFT系列不仅仅是数字图像，更是作者生命旅程在区块链上的<em>编年史</em>。它们代表了他独特的人生时刻和阶段。</li>
+                    <li>💎 <em>NFT类别：</em>NFT分为普通、稀有和传奇，这增加了收藏和排他性的元素。</li>
+                    <li>🎁 <em>持有奖励：</em>过往NFT系列的持有者会定期获得额外的JK代币空投，无论他们目前是否参与JK社区。这是一种鼓励和感谢他们过去支持的形式，NFT是这种参与的证明。</li>
                 </ul>
                 <br><br>`,
-                "JK 实用性": `
+                "УТИЛИТАРНОСТЬ JK": `
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>💡 <em>实际应用：</em> JK 可以兑换 VPN 服务扩展，该服务由 Jekardos 的订阅者开发，并同意进行此类兑换。这使得代币具有<em>实际效用</em>，超越了投机。</li>
-                    <li>🚀 <em>实用性扩展：</em> 未来计划扩大合作伙伴名单，这些合作伙伴将提供有价值的服务，可以通过 JK 获得，这将增加其对社区的价值。</li>
+                    <li>💡 <em>实际应用：</em>JK可以兑换Jekardos订阅者开发的VPN服务延期，该订阅者同意这种兑换。这赋予了代币超越投机的<em>实际效用</em>。</li>
+                    <li>🚀 <em>效用扩展：</em>未来计划扩大合作伙伴名单，这些合作伙伴将提供可以用JK兑换的有价值服务，这将增加其对社区的价值。</li>
                 </ul>
                 <br><br>`,
-                "代币经济学和透明度": `
+                "ТОКЕНОМИКА И ПРОЗРАЧНОСТЬ": `
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>🔒 <em>作者份额限制：</em> 作者承诺永远不会拥有超过 JK 总发行量 20% 的份额。这确保了绝大多数代币掌握在社区手中，促进了去中心化。</li>
-                    <li>📈 <em>收益贡献：</em> Jekardos 旅行者频道的部分收益以 TON 的形式直接用于 JK，为代币的发展提供支持和贡献。</li>
-                    <li>✅ <em>透明度：</em> 所有 JK 代币操作，包括分发和转移，都将是透明的，并可在 TON 区块链上查看。</li>
-                    <li>👨‍👩‍👧‍👦 <em>家庭支持：</em> 作者公开声明其可以使用其份额支持家人，这增强了信任并展示了项目的人性。</li>
+                    <li>🔒 <em>作者份额限制：</em>作者承诺永远不会拥有超过JK总发行量20%的份额。这确保了绝大多数代币掌握在社区手中，促进了去中心化。</li>
+                    <li>📈 <em>货币化贡献：</em>Jekardos频道的部分货币化所得将用于支持JK，从而为代币的发展提供支持和促进。</li>
+                    <li>✅ <em>透明度：</em>所有JK代币操作，包括分发和转移，都将是透明的，并可在TON区块链上查看。</li>
+                    <li>👨‍👩‍👧‍👦 <em>家庭支持：</em>作者公开声明可能将自己的份额用于支持家人，增强了信任，并展示了项目的人性化。</li>
                 </ul>
                 <div class="flex flex-col items-center my-8 p-4 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-orange-400 mb-4">JK 分布</h3>
+                    <h3 class="text-xl font-semibold text-orange-400 mb-4">JK分配</h3>
                     <div class="w-full h-8 bg-gray-600 rounded-full flex overflow-hidden">
                         <div class="bg-yellow-500 h-full flex items-center justify-center text-[0.5rem] font-bold text-gray-900 text-center rounded-l-full" style="width: 20%;">
                             20% 作者
@@ -721,90 +803,122 @@
                         <span>社区份额</span>
                     </div>
                 </div>`,
-                "社区的愿景和未来": `Jekardos Coin 旨在创建一个<em>可持续、去中心化和自给自足的社区</em>。主要发展方向包括：
+                "ВИДЕНИЕ И БУДУЩЕЕ": `Jekardos Coin 致力于创建一个<em>可持续、去中心化和自给自足的社区</em>。关键发展方向包括：
                 <br><br>
                 <ul class="ml-4 space-y-2">
-                    <li>🌐 <em>逐步去中心化：</em> 从鲸鱼理事会过渡到成熟的去中心化自治组织 (DAO)，其中决策将由所有 JK 持有者投票决定。</li>
-                    <li>🚀 <em>生态系统扩展：</em> 吸引新的合作伙伴和开发者，创建使用 JK 的额外服务和产品。</li>
-                    <li>✨ <em>加强社区品牌：</em> 发展独特的 JK 身份，该身份将独立于作者的个人品牌而存在，但会对其进行补充。</li>
-                    <li>🤖 <em>流程自动化：</em> 通过智能合约最大限度地自动化分发和其他操作，以提高效率和透明度。</li>
+                    <li>🌐 <em>逐步去中心化：</em>从巨鲸委员会过渡到成熟的去中心化自治组织（DAO），所有JK持有者将通过投票做出决策。</li>
+                    <li>🚀 <em>生态系统扩展：</em>吸引新的合作伙伴和开发者，创建使用JK的额外服务和产品。</li>
+                    <li>✨ <em>加强社区品牌：</em>发展独特的JK身份，它将独立于作者的个人品牌而存在，但会对其进行补充。</li>
+                    <li>🤖 <em>流程自动化：</em>通过智能合约最大限度地实现分发和其他操作的自动化，以提高效率和透明度。</li>
                 </ul>
                 <br><br>`,
-                "重要法律免责声明": `Jekardos Coin (JK) <em>不是</em>俄罗斯联邦法律规定的<em>投资工具、证券、数字金融资产 (DFA) 或支付工具</em>。\n<br><br>\n<ul class="ml-4 space-y-2">\n    <li>⚠️ <em>Риски:</em> JK 对社区的价值可能上涨也可能下跌，并可能跌至零。不保证获得利润或保留投资资金。</li>
-                    <li>⚖️ <em>Ответственность:</em> Вы несете полную ответственность за любые операции с JK, включая соблюдение налогового законодательства вашей юрисдикции.</li>
-                    <li>👨‍⚖️ <em>Не юридическая консультация:</em> Информация в этом документе не является юридической или финансовой консультацией. Мы<em>настоятельно рекомендуем проконсультироваться с квалифицированным юристом</em>, специализирующимся на цифровых активах и законодательстве вашей страны, по всем вопросам, связанным с JK.</li>
+                "ВАЖНОЕ ЮРИДИЧЕСКОЕ ПРЕДУПРЕЖДЕНИЕ": `Jekardos Coin (JK) <em>不是</em>俄罗斯联邦法律规定的<em>投资工具、证券、数字金融资产 (DFA) 或支付手段</em>。
+                <br><br>
+                <ul class="ml-4 space-y-2">
+                    <li>⚠️ <em>风险：</em>JK对社区的价值可能上涨也可能下跌，并可能跌至零。无法保证获得利润或保全投资资金。</li>
+                    <li>⚖️ <em>责任：</em>您对所有JK操作负全部责任，包括遵守您所在司法管辖区的税法。</li>
+                    <li>👨‍⚖️ <em>非法律建议：</em>本文档中的信息并非法律或财务建议。我们<em>强烈建议就所有与JK相关的事宜咨询</em>专门从事数字资产和您所在国家法律的<em>合格律师</em>。</li>
                 </ul>
                 <br><br>`,
-                "结论": `Jekardos Coin 是一个<em>雄心勃勃的项目</em>，它结合了个人品牌的力量、活跃的社区和创新的区块链技术。它的成功将取决于持续的社区参与、代币实用性的扩展以及负责任的开发方法，同时考虑所有法律方面。<em>加入 JK 社区，成为这个独特故事的一部分！</em>`,
-                "什么是 TON 区块链？": `TON (The Open Network) 是一个由 Telegram 团队开发的<em>去中心化区块链平台</em>。它旨在每秒处理数百万笔交易，提供快速、安全和可扩展的解决方案。\n<br><br>\n<h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">TON 的优势：</h3>\n<br><br>\n<ul class="ml-4 space-y-2">\n    <li>⚡️ <em>可扩展性：</em> TON 凭借其独特的“无限分片”架构，能够处理大量交易。</li>
-                    <li>🚀 <em>速度：</em> TON 网络上的交易几乎可以即时确认。</li>
-                    <li>🔒 <em>安全性：</em> 高级别的加密保护确保用户资产和数据的安全。</li>
-                    <li>🌐 <em>去中心化：</em> 网络由社区管理，降低了中心化控制的风险。</li>
-                    <li>📱 <em>用户友好性：</em> 与 Telegram 的集成使 TON 可供数百万用户使用。</li>
-                    <li>💰 <em>低费用：</em> TON 网络上的交易成本远低于许多其他区块链。</li>
+                "ЗАКЛЮЧЕНИЕ": `Jekardos Coin 是一个<em>雄心勃勃的项目</em>，它结合了个人品牌的力量、活跃的社区和创新的区块链技术。其成功将取决于社区的持续参与、代币效用的扩展以及对发展负责任的态度，同时考虑到所有法律方面。<em>加入JK社区，成为这个独特故事的一部分！</em>`,
+                "ЧТО ТАКОЕ TON BLOCKCHAIN?": `TON (The Open Network) 是由Telegram团队开发的<em>去中心化区块链平台</em>。它旨在每秒处理数百万笔交易，提供快速、安全和可扩展的解决方案。
+                <br><br>
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">TON的优势：</h3>
+                <br><br>
+                <ul class="ml-4 space-y-2">
+                    <li>⚡️ <em>可扩展性：</em>TON凭借其独特的“无限分片”架构，能够处理海量交易。</li>
+                    <li>🚀 <em>速度：</em>TON网络上的交易几乎即时确认。</li>
+                    <li>🔒 <em>安全性：</em>高水平的密码学保护确保用户资产和数据的安全。</li>
+                    <li>🌐 <em>去中心化：</em>网络由社区治理，降低了中心化控制的风险。</li>
+                    <li>📱 <em>用户友好：</em>与Telegram集成，使TON可供数百万用户使用。</li>
+                    <li>💰 <em>低费用：</em>TON网络上的交易成本远低于许多其他区块链。</li>
                 </ul>
                 <br><br>`,
-                "如何创建 TON Space 钱包（通过 Telegram）": `TON Space 是一个直接内置于 Telegram 的<em>非托管钱包</em>。它允许您轻松管理您的 TON 和其他代币。\n<br><br>\n<h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);\">说明：</h3>\n<br><br>\n<ol class="list-decimal list-inside ml-4 space-y-2">\n    <li>1️⃣ 打开 Telegram 并找到 <a href="https://t.me/wallet" target="_blank" class="text-orange-400 hover:underline">@wallet</a> 机器人。</li>
-                    <li>2️⃣ 点击“开始”(Start)。</li>
+                "КАК ЗАВЕСТИ TON SPACE КОШЕЛЁК (ЧЕРЕЗ TELEGRAM)": `TON Space 是直接内置于Telegram中的<em>非托管钱包</em>。它允许您轻松管理您的TON和其他代币。
+                <br><br>
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">说明：</h3>
+                <br><br>
+                <ol class="list-decimal list-inside ml-4 space-y-2">
+                    <li>1️⃣ 打开Telegram并找到机器人<a href="https://t.me/wallet" target="_blank" class="text-orange-400 hover:underline">@wallet</a>。</li>
+                    <li>2️⃣ 点击“开始”。</li>
                     <li>3️⃣ 按照机器人的说明激活钱包。系统会提示您创建新钱包或导入现有钱包。</li>
-                    <li>4️⃣ 创建新钱包时，务必将您的<em>助记词 (seed phrase)</em> 保存在安全的地方。这是您<strong>资产的密钥</strong>！</li>
-                    <li>5️⃣ 激活后，您将看到您的余额并可以发送/接收 TON 和其他代币。</li>
+                    <li>4️⃣ 创建新钱包时，务必将您的<em>助记词（seed phrase）</em>安全地保存。这是您<strong>资产的钥匙</strong>！</li>
+                    <li>5️⃣ 激活后，您将看到您的余额，并可以发送/接收TON和其他代币。</li>
                 </ol>
                 <br><br>`,
-                "如何创建 Tonkeeper 钱包": `Tonkeeper 是一个流行的第三方 TON 钱包，可作为移动应用程序和浏览器扩展使用。它提供<em>高级功能和用户友好的界面</em>。\n<br><br>\n<h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);\">说明：</h3>\n<br><br>\n<ol class="list-decimal list-inside ml-4 space-y-2">\n    <li>1️⃣ <strong>对于移动设备：</strong> 从 App Store (iOS) 或 Google Play (Android) 下载 Tonkeeper 应用程序。</li>
-                    <li>2️⃣ <strong>对于浏览器：</strong> 为您的浏览器（Chrome、Firefox 等）安装 Tonkeeper 扩展程序。</li>
-                    <li>3️⃣ 打开应用程序/扩展程序并选择“创建新钱包”(Create new wallet)。</li>
+                "КАК ЗАВЕСТИ TONKEEPER КОШЕЛЁК": `Tonkeeper 是一个流行的第三方TON钱包，可作为移动应用程序和浏览器扩展使用。它提供<em>扩展功能和用户友好的界面</em>。
+                <br><br>
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">说明：</h3>
+                <br><br>
+                <ol class="list-decimal list-inside ml-4 space-y-2">
+                    <li>1️⃣ <strong>对于移动设备：</strong>从App Store (iOS) 或 Google Play (Android) 下载Tonkeeper应用程序。</li>
+                    <li>2️⃣ <strong>对于浏览器：</strong>为您的浏览器（Chrome、Firefox等）安装Tonkeeper扩展程序。</li>
+                    <li>3️⃣ 打开应用程序/扩展程序并选择“创建新钱包”。</li>
                     <li>4️⃣ 仔细阅读并同意条款。</li>
-                    <li>5️⃣ 将您的<em>助记词 (seed phrase)</em> 写在安全的地方。<strong>切勿与任何人分享！</strong></li>
-                    <li>6️⃣ 通过输入请求的单词确认助记词。</li>
-                    <li>7️⃣ 为访问钱包创建并确认密码。</li>
-                    <li>8️⃣ 现在您的 Tonkeeper 钱包已准备好使用！</li>
+                    <li>5️⃣ 将您的<em>助记词（seed phrase）</em>安全地记录下来。<strong>切勿与任何人分享！</strong></li>
+                    <li>6️⃣ 输入请求的单词以确认助记词。</li>
+                    <li>7️⃣ 创建并确认钱包访问密码。</li>
+                    <li>8️⃣ 现在您的Tonkeeper钱包已准备好使用！</li>
                 </ol>
-                <br>\n<p class="mt-4 text-lg leading-relaxed text-gray-300">Tonkeeper 官方网站： <a href="https://www.tonkeeper.com/" target="_blank" class="text-orange-400 hover:underline">tonkeeper.com</a></p>
+                <br>
+                <p class="mt-4 text-lg leading-relaxed text-gray-300">Tonkeeper官方网站：<a href="https://www.tonkeeper.com/" target="_blank" class="text-orange-400 hover:underline">tonkeeper.com</a></p>
                 <br><br>`,
-                "Useful Links": `
-                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">我们的资源：</h3>\n<br><br>\n<ul class="ml-4 space-y-2">\n    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Jekardos coin 社区聊天： <a href="https://t.me/JekardosCoinForever" target="_blank" class="text-orange-400 hover:underline">JekardosCoinForever</a></li>
-                    <li><i class="fab fa-youtube text-red-600 mr-2"></i>YouTube 频道： <a href="https://www.youtube.com/channel/UCoi2YbIMFbypofD0jVIC9vA" target="_blank" class="text-orange-400 hover:underline">YouTube-频道</a></li>
-                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>JK 社区作者个人 Telegram 频道： <a href="https://t.me/ya_jekardos" target="_blank" class="text-orange-400 hover:underline">@ya_jekardos</a></li>
-                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>用于计算 JK 社区活动量的 Telegram 机器人： <a href="https://t.me/Strannik_jekardos_bot" target="_blank" class="text-orange-400 hover:underline">@Strannik_jekardos_bot</a></li>
-                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>用于访问 JK 社区内容存档和季节性聊天的 Telegram 机器人，JK 汇率计算器： <a href="https://t.me/DikoNFTcheck_bot" target="_blank" class="text-orange-400 hover:underline">@DikoNFTcheck_bot</a></li>
+                "ПОЛЕЗНЫЕ ССЫЛКИ": `
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">我们的资源：</h3>
+                <br><br>
+                <ul class="ml-4 space-y-2">
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Jekardos Coin社区聊天：<a href="https://t.me/JekardosCoinForever" target="_blank" class="text-orange-400 hover:underline">JekardosCoinForever</a></li>
+                    <li><i class="fab fa-youtube text-red-600 mr-2"></i>YouTube频道：<a href="https://www.youtube.com/channel/UCoi2YbIMFbypofD0jVIC9vA" target="_blank" class="text-orange-400 hover:underline">YouTube频道</a></li>
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>JK社区作者个人Telegram频道：<a href="https://t.me/ya_jekardos" target="_blank" class="text-orange-400 hover:underline">@ya_jekardos</a></li>
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>用于统计JK社区活跃度的Telegram机器人：<a href="https://t.me/Strannik_jekardos_bot" target="_blank" class="text-orange-400 hover:underline">@Strannik_jekardos_bot</a></li>
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>用于访问内容档案和JK社区季节性聊天的Telegram机器人，JK汇率计算器：<a href="https://t.me/DikoNFTcheck_bot" target="_blank" class="text-orange-400 hover:underline">@DikoNFTcheck_bot</a></li>
                 </ul>
-                <br><br>\n<h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">TON 的额外资源：</h3>\n<br><br>\n<ul class="ml-4 space-y-2">\n    <li>🌐 The Open Network 官方网站： <a href="https://ton.org/" target="_blank" class="text-orange-400 hover:underline">ton.org</a></li>
-                    <li>🔍 TON 区块链浏览器： <a href="https://tonviewer.com/" target="_blank" class="text-orange-400 hover:underline">tonviewer.com</a></li>
-                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Gas Pump 交易所： <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NjQ4ODA0NTUxLCJ0b2tlbl9hZGRyZXNzIjoiRVFDa3RheERfcmFNUDZJQVJ6TVVMMlhZLTJob2U5TjU5eGwxMUw2RDhVT2txQkk3In0" target="_blank" class="text-orange-400 hover:underline">GasPump 机器人</a></li>
-                </ul>
-                <br><br>`,
-                "Jekardos Coin 机器人如何工作": `Jekardos Coin 社区机器人旨在让我们的社区<em>更具互动性</em>并奖励活跃的参与者！\n<br><br>\n<h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);\">它是如何工作的：</h3>\n<br><br>\n<ul class="ml-4 space-y-2">\n    <li>💬 <em>活动积分：</em> 在聊天中每条<em>有意义的</em>消息（超过 3 个字）都会获得积分，之后您可以获得 $JK (Jekardos Coin)。您越<em>活跃</em>，赚取的积分就越多！</li>
-                    <li>📊 <em>/stats 命令：</em> 使用此命令查看您的<em>个人统计数据</em>：您在一天、一周、一个月、一年和所有时间赚取了多少 $JK。</li>
-                    <li>🏆 <em>/rating 命令：</em> 显示不同时期（一天、一周、一个月、一年）聊天中最活跃的<em>前 10 名</em>参与者。与朋友竞争！</li>
-                    <li>❓ <em>/help 命令：</em> 机器人功能的详细指南以及有关项目和技术的<em>重要信息</em>。</li>
-                    <li>🔗 <em>/JKcommunity 命令：</em> 包含我们<em>所有资源</em>和社交网络的链接。</li>
-                    <li>⏰ <em>欢乐时光：</em> 在一天中的特定时间，获得 $JK 的机会会<em>增加</em>！请留意通知。</li>
-                    <li>🔄 <em>自动积分转移：</em> 您的每日积分会自动转移到每周统计，然后是每月、每年，最后是“终身”统计。</li>
+                <br><br>
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">有关TON的额外资源：</h3>
+                <br><br>
+                <ul class="ml-4 space-y-2">
+                    <li>🌐 The Open Network官方网站：<a href="https://ton.org/" target="_blank" class="text-orange-400 hover:underline">ton.org</a></li>
+                    <li>🔍 TON区块链浏览器：<a href="https://tonviewer.com/" target="_blank" class="text-orange-400 hover:underline">tonviewer.com</a></li>
+                    <li><i class="fab fa-telegram-plane text-blue-400 mr-2"></i>Gas Pump交易所：<a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NjQ4ODA0NTUxLCJ0b2tlbl9hZGRyZXNzIjoiRVFDa3RheERfcmFNUDZJQVJ6TVVMMlhZLTJob2U5TjU5eGwxMUw2RDhVT2txQkk3In0" target="_blank" class="text-orange-400 hover:underline">GasPump机器人</a></li>
                 </ul>
                 <br><br>`,
-                "聊天规则": `
-                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);\">聊天规则：</h3>\n<br><br>\n<ul class="ml-4 space-y-2">\n    <li>✅ <em>仇恨作者</em>很可能导致封禁；</li>
+                "КАК РАБОТАЕТ БОТ JEKARDOS COIN": `Jekardos Coin社区机器人旨在使我们的社区<em>更具互动性</em>并奖励活跃参与者！
+                <br><br>
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">工作原理：</h3>
+                <br><br>
+                <ul class="ml-4 space-y-2">
+                    <li>💬 <em>活跃度积分：</em>在聊天中每条<em>有意义的</em>消息（超过3个字的消息）都会获得积分，之后您可以凭此获得$JK（Jekardos Coin）。您<em>越活跃</em>，获得的积分就越多！</li>
+                    <li>📊 <em>/stats 命令：</em>使用此命令可以查看您的<em>个人统计数据</em>：您每天、每周、每月、每年以及总共获得了多少$JK。</li>
+                    <li>🏆 <em>/rating 命令：</em>显示不同时期（日、周、月、年）最活跃的聊天参与者的<em>前10名</em>。与朋友竞争！</li>
+                    <li>❓ <em>/help 命令：</em>关于机器人功能和项目及技术<em>重要信息</em>的详细指南。</li>
+                    <li>🔗 <em>/JKcommunity 命令：</em>包含<em>我们所有资源</em>和社交网络的链接。</li>
+                    <li>⏰ <em>欢乐时光：</em>在一天中的特定时间，获得$JK的活跃度机会<em>增加</em>！请留意通知。</li>
+                    <li>🔄 <em>积分自动转移：</em>您的每日积分会自动转移到每周统计，然后是每月、每年，最后是“终身”统计。</li>
+                </ul>
+                <br><br>`,
+                "ПРАВИЛА ЧАТА": `
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">聊天规则：</h3>
+                <br><br>
+                <ul class="ml-4 space-y-2">
+                    <li>✅ <em>对作者的仇恨</em>很可能导致封禁；</li>
                     <li>✅ <em>不当行为</em>将导致封禁；</li>
-                    <li>✅ <em>对其他聊天参与者无礼</em>将导致封禁；</li>
+                    <li>✅ <em>对其他聊天参与者的粗鲁行为</em>将导致封禁；</li>
                     <li>✅ <em>仇恨和敌意</em>将导致封禁；</li>
-                    <li>✅ 聊天活动将获得 $JK 奖励。</li>
+                    <li>✅ 聊天活跃度可以获得$JK奖励。</li>
                 </ul>
-                <br><br>\n<p class="mt-4 text-red-400 font-bold">在任何情况下都不会解除封禁。</p>`,
-                "支持": `
-                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);\">技术支持：</h3>\n<p class="text-lg leading-relaxed text-gray-300">如果您有任何问题或疑问，可以联系管理员： <a href="https://t.me/Jekardos_bot" target="_blank" class="text-orange-400 hover:underline">@Jekardos_bot</a></p>`
+                <br><br>
+                <p class="mt-4 text-red-400 font-bold">在任何情况下都不会解除封禁。</p>`,
+                "ПОДДЕРЖКА": `
+                <h3 class="text-2xl font-semibold mb-2" style="color: var(--color-heading-yellow);">技术支持：</h3>
+                <p class="text-lg leading-relaxed text-gray-300">如果您有任何疑问或问题，可以联系管理员：<a href="https://t.me/Jekardos_bot" target="_blank" class="text-orange-400 hover:underline">@Jekardos_bot</a></p>`
             }
         };
-
-        let currentLang = 'ru'; // Язык по умолчанию
 
         const contentContainer = document.getElementById('content-container');
         const overlayNavLinksContainer = document.getElementById('overlay-nav-links');
         const currentLangDisplay = document.getElementById('current-lang-display');
         const jkCoinAgeDisplay = document.getElementById('jk-coin-age');
-        const hamburgerBtn = document.getElementById('hamburger-btn');
-        const overlayMenu = document.getElementById('overlay-menu');
-        const overlayCloseBtn = document.getElementById('overlay-close-btn'); // Получаем элемент по ID
+        let currentLang = 'ru'; // Язык по умолчанию
 
         // Функция для рендеринга контента в зависимости от текущего языка
         function renderContent() {
@@ -1015,6 +1129,10 @@
         });
 
         // Функциональность меню-гамбургера
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const overlayMenu = document.getElementById('overlay-menu');
+        const overlayCloseBtn = document.getElementById('overlay-close-btn');
+
         hamburgerBtn.addEventListener('click', () => {
             overlayMenu.classList.add('open');
         });
